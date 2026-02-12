@@ -2,7 +2,6 @@
 ```java
 
 public static void main(String [] args) {
-    Scanner sc = new Scanner(System.in);
     //Task 1.1 --- Manual Boxing
     System.out.println("Task 1.1 --- Manual Boxing");
 
