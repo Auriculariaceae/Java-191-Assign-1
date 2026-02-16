@@ -1,6 +1,6 @@
 ### Part A TaxTableTools 
 
-``` java 
+```java
 public class TaxTableTools {
 
     /** This class searches the 'search' table with a search argument and
