@@ -60,7 +60,7 @@ public class TaxTableTools {
 } 
 
 ```
-### PART A Income Tax Main
+### Part A Income Tax Main
 
 ```java 
 import java.util.Scanner;
