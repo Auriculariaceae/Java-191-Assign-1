@@ -125,3 +125,6 @@ public class IncomeTaxMain {
 ```
 
 # Challenges:<br/> 
+The main challenge with this activity was understanding what an overloaded constructor really was. <br/>
+I also had to learn how to use "this.". Because we are keeping search as search then --> this.search = search; is needed <br/>
+otherwise we have search = search; which doesn't work. However, after googling the other usages of "this." I am confused as to the other reasons. 
