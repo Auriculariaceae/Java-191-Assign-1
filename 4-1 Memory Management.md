@@ -25,7 +25,11 @@ void main() {
     memory.setAge(200);
     memory.setGpa(3.76);
     memory.displayInfo();
+
+int i = 11;
+Double Q = 1700.00;
 }
 ```
 
 # Stack
+|Memory Address|
