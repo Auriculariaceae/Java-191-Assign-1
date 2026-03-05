@@ -1,7 +1,7 @@
 ```java
 // ===== Code from file Person.java =====
 public class Person {
-    private int ageYears;     //originally private, but I wanted to use it in student child class methods, so must be protected
+    private int ageYears;     
     private String lastName;
 
     public void setName(String userName) {
