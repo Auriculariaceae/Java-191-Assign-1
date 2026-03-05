@@ -1,22 +1,26 @@
 ```java
 // ===== Code from file Person.java =====
 public class Person {
-    protected int ageYears;     //originally private, but I wanted to use it in student child class methods, so must be protected
-    protected String lastName;
+    private int ageYears;     //originally private, but I wanted to use it in student child class methods, so must be protected
+    private String lastName;
 
     public void setName(String userName) {
         lastName  = userName;
     }
-
+    public String getName(){
+        return lastName;
+    }
     public void setAge(int numYears) {
         ageYears = numYears;
     }
-
+    public int getAge(){
+        return ageYears;
+    }
     // Other parts omitted
 
     public void printAll() {
-        System.out.print("Name: " + lastName);
-        System.out.print(", Age: "  + ageYears);
+        System.out.print("Name: " + getName());
+        System.out.print(", Age: "  + getAge());
     }
 }
 // ===== end =====
@@ -33,7 +37,7 @@ public class Student extends Person {
     }
 @Override
 public void printAll() {
-    System.out.println("Name: "+lastName +", Age: "+ageYears+ ", ID "+idNum);
+    System.out.println("Name: "+getName() +", Age: "+getAge()+ ", ID "+getID());
 }
 }
 // ===== end =====
@@ -45,13 +49,10 @@ public class StudentDerivationFromPerson {
         courseStudent.setAge(20);
         courseStudent.setID(9999);
         courseStudent.printAll();
-
     }
 }
 ```
-For this specific assignment I didn't run into any challenges. When using the Overriden method printAll() in 
-the child class Student, I had to make the initial properties of the Person class into protected instead of private, so that
-my child class's method can utilize them. 
+For this specific assignment I didn't run into any challenges asides from needing to use a getter method in my printAll() method because the properties are private in the main class.
 
 
 
