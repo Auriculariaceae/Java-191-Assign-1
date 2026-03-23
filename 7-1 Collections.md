@@ -9,16 +9,16 @@ import java.util.Deque;
 public static void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);
-   // System.out.println("Word to be chec
+  
     System.out.println("Word to be checked");
-    //String check = palin;
+    
 
 
     boolean continuous = true;
     boolean palindromed = true;
     while(continuous){
 
-        String palin = sc.nextLine().trim().toLowerCase();
+        String palin = sc.nextLine().trim().toLowerCase().replace(" ", "");
         Deque<Character> newP = new LinkedList<>();
     for (int i = 0; i < palin.length(); i++) {   //converts string palin into characters  then added to deque
         char c = palin.charAt(i);  //grabs the single character at that position
