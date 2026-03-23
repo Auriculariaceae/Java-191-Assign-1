@@ -14,8 +14,8 @@ public static void main(String[] args) {
     Deque<Character> newP = new LinkedList<>();
 
     for (int i = 0; i < palin.length(); i++) {   //converts string palin into characters  then added to deque
-        char c = palin.charAt(i);
-        newP.addLast(c);
+        char c = palin.charAt(i);  //gets character of first letter and every letter after
+        newP.addLast(c);  //adds each character to deque individually
     }
     int j = 0; //variable is here so single char doesn't double outputs
     if (newP.size() <= 1) { //only for single char
