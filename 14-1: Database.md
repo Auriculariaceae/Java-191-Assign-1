@@ -54,3 +54,8 @@ public class SimpleJdbc {
     }
 }
 ```
+# Challenges
+I ran into an issue where where my .executeQuery was closing my set and not allowing for any of my updates or changes to go through. This was fixed by making the 
+Query line go after all the updates and insertions. I also had to learn the proper way to insert or update a record in java. I had to create a String
+with the SQL code (with proper syntax[worst part]) and then use .executeUpdate() instead of .executeQuery. Query returns and Update() is for inserting, deleting,
+or updating the SQL.
